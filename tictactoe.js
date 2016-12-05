@@ -9,6 +9,7 @@ for (let i = 0; i < 3; i++) {
 }
 
 let p1Turn = true;
+let counter = 0;
 
 const promptUser = () => {
   if (p1Turn) {
@@ -99,6 +100,10 @@ const updateBoard = (x, y) => {
     displayBoard();
     console.log('Player2 Wins');
   } else {
+    counter++;
+    if (counter === 9) {
+      return console.log('Draw');
+    }
     startGame();
   }
 };
