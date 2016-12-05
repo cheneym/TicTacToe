@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cheneym/TicTacToe/issues"
   },
-  "homepage": "https://github.com/cheneym/TicTacToe#readme"
+  "homepage": "https://github.com/cheneym/TicTacToe#readme",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
 }
