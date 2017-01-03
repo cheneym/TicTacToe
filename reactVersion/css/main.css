@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.tile {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-size: 50px;
+}
+
+.message {
+  display: flex;
+  flex: 1;
+  font-size: 75px;
+  justify-content: center;
+  align-items: center;
+}

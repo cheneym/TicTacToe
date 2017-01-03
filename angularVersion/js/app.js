@@ -21,7 +21,7 @@ app.controller('MainController', ['$scope', ($scope) => {
       return true;
     }
     return false;
-  }
+  };
 
   $scope.placeItem = (row, col) => {
     if ($scope.board[row][col] === '' && !$scope.hasWinner) {
@@ -29,7 +29,7 @@ app.controller('MainController', ['$scope', ($scope) => {
       if (hasWinner(row, col, $scope.board)) {
         $scope.hasWinner = true;
       } else {
-        $scope.player = $scope.player === 'Player 1' ? 'Player 2' : 'Player 1';      
+        $scope.player = $scope.player === 'Player 1' ? 'Player 2' : 'Player 1';
       }
     }
   };
